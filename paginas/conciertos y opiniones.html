@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conciertos y Opiniones - Hillsong</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+    <div class="cuerpo-pagina">
+        <header class="encabezado-interno">
+            <h1>Conciertos y Opiniones</h1>
+            <p>Cuéntanos tu experiencia en los eventos de Hillsong.</p>
+        </header>
+
+        <section class="info-conciertos">
+            <div class="tarjeta-evento">
+                <h3>Próximos Eventos 2026</h3>
+                <p>La banda se presentará en varias ciudades de Latinoamérica. ¡Mantente atento a las fechas!</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="seccion-formulario">
+            <h2>Deja tu Opinión</h2>
+            <form action="#" method="post" class="formulario-contacto">
+                
+                <div class="campo">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+                </div>
+
+                <div class="campo">
+                    <label for="concierto">¿A qué concierto asististe?</label>
+                    <select id="concierto" name="concierto">
+                        <option value="sydney">Sydney, Australia</option>
+                        <option value="usa">Peru,Lima</option>
+                        <option value="latam">Bolivia,La Paz</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label>Califica tu experiencia:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="excelente" name="califica" value="excelente"> <label for="excelente">Excelente</label>
+                        <input type="radio" id="bueno" name="califica" value="bueno"> <label for="bueno">Bueno</label>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="comentario">Tu Opinión:</label>
+                    <textarea id="comentario" name="comentario" rows="5" placeholder="Escribe aquí lo que sentiste en el concierto..." required></textarea>
+                </div>
+
+                <button type="submit" class="boton-enviar">Enviar Opinión</button>
+            </form>
+        </section>
+
+        <center>
+            <br>
+            <a href="../index.html" class="boton-volver">⬅ Volver al Inicio</a>
+        </center>
+    </div>
+
+</body>
+</html>
